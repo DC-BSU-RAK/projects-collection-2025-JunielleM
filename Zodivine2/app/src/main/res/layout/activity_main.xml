@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#270510"
+    android:padding="16dp">
+
+    <ScrollView
+        android:id="@+id/zodiacScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/zodiacControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/zodiacLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Zodiac Buttons -->
+            <Button android:id="@+id/btnAries" android:text="Aries" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnTaurus" android:text="Taurus" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnGemini" android:text="Gemini" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnCancer" android:text="Cancer" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnLeo" android:text="Leo" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnVirgo" android:text="Virgo" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnLibra" android:text="Libra" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnScorpio" android:text="Scorpio" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnSagittarius" android:text="Sagittarius" style="@style/ZodiacButtonStyle" />
+            <Button android:id="@+id/btnCapricorn" android:text="Capricorn" style="@style/ZodiacButtonStyle" />
+
+            <Button
+                android:id="@+id/btnAquarius"
+                style="@style/ZodiacButtonStyle"
+                android:text="Aquarius" />
+
+            <Button android:id="@+id/btnPisces" android:text="Pisces" style="@style/ZodiacButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Controls at the Bottom -->
+    <LinearLayout
+        android:id="@+id/zodiacControls"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button android:id="@+id/btnHoroscope" android:text="Horoscope" style="@style/ZodiacButtonStyle" />
+        <Button android:id="@+id/btnLove" android:text="Love" style="@style/ZodiacButtonStyle" />
+        <Button android:id="@+id/btnPalm" android:text="Palm Reading" style="@style/ZodiacButtonStyle" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

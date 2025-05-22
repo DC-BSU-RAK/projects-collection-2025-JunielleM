@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Zodiac Button Style (no theme conflict) -->
+    <style name="ZodiacButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#5A1A3F</item>
+    </style>
+
+</resources>
